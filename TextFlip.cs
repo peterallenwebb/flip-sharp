@@ -21,7 +21,7 @@ namespace TextFlip
 				{'k', '\u029E'},
 				{'l', '\u05DF'},
 				{'m', '\u026F'},
-				{'n','u'},
+				{'n', 'u'},
 				{'o', 'o'},
 				{'p', 'd'},
 				{'q', 'b'},
@@ -41,7 +41,7 @@ namespace TextFlip
 				{'{', '}' },
 				{'}', '{'},
 				{'?', '\u00BF'},
-				{'\u00BF','?'},
+				{'\u00BF', '?'},
 				{'!', '\u00A1'},
 				{'.', '\u02D9'},
 				{'_', '\u203E'},
@@ -51,7 +51,7 @@ namespace TextFlip
 				{'B', 'q'},
 				{'C', 'Ͻ'},
 				{'D', 'ᗡ'},
-        {'E', 'Ǝ'},
+ 				{'E', 'Ǝ'},
 				{'F', 'Ⅎ'},
 				{'G', 'ƃ'},
 				{'H', 'H'},
@@ -80,7 +80,7 @@ namespace TextFlip
 				{'4', 'ᔭ'}, 
 				{'5', 'S'},
 				{'6', '9'},
-				{'7','Ɫ'},
+				{'7', 'Ɫ'},
 				{'8', '8'},
 				{'9', '6'}
 			};
@@ -97,7 +97,7 @@ namespace TextFlip
 		{
 			var origChars = text.ToCharArray();
 			var flipChars = origChars.Select(c => TryToFlip(c))
-				                     .Reverse();
+			                         .Reverse();
 
 			return new String(flipChars.ToArray());
 		}
